@@ -19,18 +19,18 @@
 """
 
 import unittest
-import sys
+import sys  #riconosce il sistema operativo in cui sto lavorando
 
 import numpy as np
 from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
-if sys.flags.interactive:
-    plt.ion()
+if sys.flags.interactive: #permette di isolare lo script dalla cartella in cui si trova, lo isola da qualsiasi path, cosi puo essere importato nei vari programmi
+    plt.ion() #serve ad attivare l'interactive (lo mette in modalita ON)
 
 from splrand.pdf import ProbabilityDensityFunction
 
 
-class testPdf(unittest.TestCase):
+class testPdf(unittest.TestCase):   #facendo questa classe possiamo runnare tutti i test insieme perche eritìditiamo da testcase
 
     """Unit test for the pdf module.
     """
