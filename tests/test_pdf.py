@@ -27,7 +27,7 @@ import matplotlib.pyplot as plt
 if sys.flags.interactive: #permette di isolare lo script dalla cartella in cui si trova, lo isola da qualsiasi path, cosi puo essere importato nei vari programmi
     plt.ion() #serve ad attivare l'interactive (lo mette in modalita ON)
 
-from splrand.pdf import ProbabilityDensityFunction
+from splrand_praticelli.pdf import ProbabilityDensityFunction
 
 
 class testPdf(unittest.TestCase):   #facendo questa classe possiamo runnare tutti i test insieme perche eritìditiamo da testcase
